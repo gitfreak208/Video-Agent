@@ -1,0 +1,20 @@
+# Keep shell and Python scripts LF on every checkout — CRLF breaks bash
+# execution (the scripts/*.sh pipeline and the autosave hook run via bash).
+*.sh    text eol=lf
+*.py    text eol=lf
+
+# Source and config: normalize to LF.
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+
+# Binary assets — never touch line endings.
+*.png   binary
+*.jpg   binary
+*.mp4   binary
+*.mov   binary
+*.wav   binary
+*.mp3   binary
