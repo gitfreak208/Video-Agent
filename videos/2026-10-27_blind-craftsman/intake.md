@@ -38,3 +38,15 @@ This storyboard is a **live-action + photoreal-CG cinematic film**. This pipelin
 3. **Scratch VO:** want TTS scratch VO on the animatic? Needs an ElevenLabs/OpenAI key in `.env`. (Default: on-screen VO text only until a key is added.)
 
 **No build starts until a deliverable is chosen and (for an animatic) this plan is approved.**
+
+## Decision log
+- **2026-10-27 — Deliverable:** Alok is supplying a **video generated with Veo 3.1**; I edit/assemble it to the storyboard (not an animatic, not pure MG). This shifts the project to a **footage-edit** job (Phase 6b: probe → paper edit → cut/stitch → titles/captions/grade/music → both masters). Capability now fits: editing supplied footage is in scope.
+- **2026-10-27 — Look:** keep the storyboard's cinematic look (obsidian/tungsten/steel-blue, 2.39:1, Big Shoulders + IBM Plex). Standalone hero film, NOT Antier-branded.
+
+## Open — awaiting the media (blocks all build)
+Need the actual Veo file(s). Specifically:
+1. **The file(s):** drop them in `assets/supplied/raw/` here, and give me the path.
+2. **Structure:** one continuous render of the whole 1:48, or multiple clips (Veo 3.1 renders ~8s at a time, so likely many)? If many, which clip maps to which shot/scene.
+3. **Audio:** does the render include VO / SFX / music, or is it picture only (do I add VO + sound)?
+4. **Spec:** resolution and fps of the render (Veo is typically 720p/1080p; storyboard target is 2160p/23.976 — I'll conform and report any upscaling).
+
