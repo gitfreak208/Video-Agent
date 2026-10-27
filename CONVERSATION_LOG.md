@@ -17,3 +17,8 @@ This repository auto-saves the progress of the working session. Each entry below
 ### Status
 - Manual autosave is active: progress is committed + pushed at the end of each turn.
 - Automatic (hook-driven) autosave awaits approval + a session started inside this repo.
+
+### Decisions (user)
+- Scope: **this repo only** — hook in `.claude/settings.json`, not global.
+- What to save: **readable log + full transcript**.
+- Hook-write blocked by the auto-mode permission classifier, so the user will create `.claude/settings.json` themselves (content provided). Saved a persistent memory note so progress keeps getting pushed each turn in future sessions on this repo.
