@@ -2,13 +2,20 @@
 # Record tool versions here during first-run setup (CLAUDE.md Section 11).
 
 tools:
-  node: ""            # require 18+  (e.g. v20.11.0)
-  ffmpeg: ""          # require 6+   (e.g. 6.1)
-  ffprobe: ""
-  python: ""          # require 3.10+ (e.g. 3.12)
-  remotion: ""        # installed @remotion/cli version
-  faster_whisper: ""
-  scenedetect: ""
+  node: "v24.22.1"    # portable install at C:\Users\mohit.bhatt\tools\node-v24.22.1-win-x64 (not on system PATH)
+  npm: "11.19.1"
+  ffmpeg: ""          # NOT INSTALLED — download blocked by permission policy; see STATUS below
+  ffprobe: ""         # NOT INSTALLED (ships with ffmpeg)
+  python: "3.12.10"
+  remotion: "4.0.539" # @remotion/cli; bundles its own render binary (no system ffmpeg needed to render)
+  faster_whisper: "1.2.1"   # uses PyAV (bundled ffmpeg libs) — transcription works without system ffmpeg
+  scenedetect: "0.7.2"
+
+# NOTE: Node is a portable (user-scope) install, not on PATH. Prepend
+# C:\Users\mohit.bhatt\tools\node-v24.22.1-win-x64 to PATH, or run npm/npx from there.
+# FFmpeg (system binary) is still needed for probe/proxy/cut/normalise/concat and
+# export-platforms.sh. Its install was blocked by the auto-mode permission policy
+# (third-party build host). Awaiting an approved install method.
 
 defaults:
   fps: 30             # 25 only if supplied footage is 25; never mixed

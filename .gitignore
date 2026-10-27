@@ -15,6 +15,7 @@ build/
 **/assets/supplied/proxy/
 **/renders/drafts/
 **/renders/final/
+renders/_smoke/
 *.mp4
 *.mov
 *.mxf
