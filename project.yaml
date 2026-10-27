@@ -1,0 +1,31 @@
+# Project-wide configuration for the Antier Video Production Agent.
+# Record tool versions here during first-run setup (CLAUDE.md Section 11).
+
+tools:
+  node: ""            # require 18+  (e.g. v20.11.0)
+  ffmpeg: ""          # require 6+   (e.g. 6.1)
+  ffprobe: ""
+  python: ""          # require 3.10+ (e.g. 3.12)
+  remotion: ""        # installed @remotion/cli version
+  faster_whisper: ""
+  scenedetect: ""
+
+defaults:
+  fps: 30             # 25 only if supplied footage is 25; never mixed
+  conform:
+    resolution_16x9: "1920x1080"
+    resolution_9x16: "1080x1920"
+    fps: 30
+    pixel_format: "yuv420p"
+    color: "rec709"
+    audio: "48000 stereo"
+
+budget:
+  per_run_usd_ceiling: 10   # stop and ask above this for any paid generation / TTS run
+
+loudness:
+  integrated_lufs: -14
+  true_peak_dbtp: -1
+  dialogue_short_term_lufs: -16
+  music_under_speech_lufs: -24
+  music_solo_lufs: -16

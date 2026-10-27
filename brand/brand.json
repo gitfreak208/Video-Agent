@@ -1,0 +1,49 @@
+{
+  "_comment": "Source of truth for brand (CLAUDE.md Section 7). Fill from the Antier brand kit before Phase 7. Do not invent values — ask Alok for the kit.",
+  "colors": {
+    "navy": "",
+    "primary": "",
+    "accent": "",
+    "background": "",
+    "text": ""
+  },
+  "fonts": {
+    "sans": { "family": "", "source": "", "weights": [] },
+    "mono": { "family": "", "source": "", "weights": [] }
+  },
+  "logos": {
+    "antier": { "svg": "", "png": "" },
+    "tokel": { "svg": "", "png": "" },
+    "abstraxn": { "svg": "", "png": "" }
+  },
+  "safe_margins": {
+    "horizontal_inset_pct": 5,
+    "vertical_top_px": 250,
+    "vertical_bottom_px": 350
+  },
+  "lower_third": {
+    "font": "",
+    "size_px": null,
+    "color": "",
+    "background": "",
+    "position": ""
+  },
+  "caption": {
+    "font": "",
+    "max_lines": 2,
+    "chars_per_line_9x16": 32,
+    "chars_per_line_16x9": 42,
+    "case": "sentence",
+    "color": "#FFFFFF",
+    "pill_color": "",
+    "pill_opacity": 0.6,
+    "drop_shadow": false,
+    "per_word_animation": false
+  },
+  "type_scale": {
+    "body_min_px_1080p": 48,
+    "headline_min_px_9x16": 72,
+    "min_seconds_on_screen": 2,
+    "min_contrast_ratio": 4.5
+  }
+}

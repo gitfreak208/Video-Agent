@@ -1,0 +1,30 @@
+# Banned in on-screen text, VO, captions, and descriptions (CLAUDE.md Section 7).
+# One entry per line. Lines starting with # are comments. QA applies judgement on
+# substrings (e.g. "most" inside "almost" is not a hit). Maintain this list.
+
+# Punctuation — use a comma, a full stop, or a colon instead.
+em dash
+—
+
+# Flagged words / phrases
+shift
+inflection point
+most
+no longer
+proud
+
+# Corporate enthusiasm
+excited
+thrilled
+game-changing
+revolutionary
+unlock
+empower
+seamless
+cutting-edge
+next-gen
+
+# Unsourced superlatives
+leading
+best-in-class
+fastest

@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Node / Remotion
+node_modules/
+npm-debug.log*
+yarn-error.log*
+out/
+build/
+.remotion/
+
+# Heavy media — kept out of git. Finals are reproducible from the approved commit
+# (CLAUDE.md Section 9). Masters live in videos/*/renders/final/ locally.
+**/assets/supplied/raw/
+**/assets/supplied/proxy/
+**/renders/drafts/
+**/renders/final/
+*.mp4
+*.mov
+*.mxf
+*.webm
+*.wav
+*.mp3
+*.aac
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: conversation autosave artifacts (CONVERSATION_LOG.md, sessions/*.jsonl)
+# are intentionally NOT ignored — they are the point of this repo's autosave.

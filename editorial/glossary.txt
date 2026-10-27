@@ -1,0 +1,21 @@
+# Canonical spellings: product names, people, terms. One per line.
+# Correct transcription and caption proper nouns against this list (Phase 6 / 6b).
+# Lines starting with # are comments. Maintain this list.
+
+# --- Products / brands ---
+Antier
+Antier Solutions
+Tokel
+Abstraxn
+
+# --- Terms (prefer British spelling, per tone) ---
+tokenisation
+tokenised
+real-world assets
+RWA
+stablecoin
+programmable money
+asset tokenisation
+
+# --- People (add presenters / named individuals here) ---
+# e.g. Nikhil <surname>
