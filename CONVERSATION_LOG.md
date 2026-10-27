@@ -31,6 +31,12 @@ This repository auto-saves the progress of the working session. Each entry below
 - Verified: directory tree matches CLAUDE.md Section 2; script stubs print usage and exit non-zero. `ffprobe` absent locally — toolchain install (Section 11 steps 1–6) is the next, gated phase.
 - `.gitignore` keeps heavy media / node_modules / .env out of git but deliberately keeps CONVERSATION_LOG.md and sessions/ tracked.
 
+### Brand kit — partial (2026-10-27)
+- Alok supplied the logo and palette. Saved `brand/logos/antier-logo.svg` (wordmark) and `brand/logos/antier-mark.png` (500×499 square logomark).
+- Colours into `brand.json`: navy `#022446` (dominant dark / default video bg), Antier blue `#0b96da` (primary + accent), light surface `#eef2ff`. Text = navy on light, white on navy. Caption pill = navy at 60%.
+- Noted: the SVG's internal blue is `#0C9EDA`, a hair off the stated brand blue `#0b96da`; treating `#0b96da` as canonical.
+- **Still needed:** fonts (wordmark typeface + caption/UI sans) — not guessed; Tokel and Abstraxn logos; API keys; footage naming; first brief.
+
 ### Next (awaiting user)
-- Approve toolchain install pass: Node/FFmpeg/Python checks, `npx create-video`, Remotion + Python deps, build template components, 10s dual-master smoke test (Section 11).
-- Provide brand kit (logos, fonts, hex codes), which API keys to enable, footage naming convention, and the first brief.
+- Fonts + remaining product logos to complete `brand.json`.
+- Approve toolchain install pass (Section 11): Node/FFmpeg/Python checks, `npx create-video`, Remotion + Python deps, build template components, 10s dual-master smoke test.

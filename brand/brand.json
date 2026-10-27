@@ -1,18 +1,24 @@
 {
-  "_comment": "Source of truth for brand (CLAUDE.md Section 7). Fill from the Antier brand kit before Phase 7. Do not invent values — ask Alok for the kit.",
+  "_comment": "Source of truth for brand (CLAUDE.md Section 7). Colours and logos supplied by Alok 2026-10-27. Fonts still needed — do not invent a typeface; ask.",
   "colors": {
-    "navy": "",
-    "primary": "",
-    "accent": "",
-    "background": "",
-    "text": ""
+    "navy": "#022446",
+    "primary": "#0b96da",
+    "accent": "#0b96da",
+    "background": "#eef2ff",
+    "text": "#022446",
+    "_notes": "navy = dominant dark (default video background per scene spec); primary/accent = Antier blue; background = light surface for light-mode frames; text = navy on light, white (#FFFFFF) on navy. The supplied logo SVG uses #0C9EDA internally, a hair off the brand blue #0b96da — #0b96da is canonical."
   },
   "fonts": {
     "sans": { "family": "", "source": "", "weights": [] },
-    "mono": { "family": "", "source": "", "weights": [] }
+    "mono": { "family": "", "source": "", "weights": [] },
+    "_notes": "NEEDED from brand kit: the wordmark typeface and the UI/caption sans. Not guessed."
   },
   "logos": {
-    "antier": { "svg": "", "png": "" },
+    "antier": {
+      "svg": "brand/logos/antier-logo.svg",
+      "png": "",
+      "mark_png": "brand/logos/antier-mark.png"
+    },
     "tokel": { "svg": "", "png": "" },
     "abstraxn": { "svg": "", "png": "" }
   },
@@ -24,8 +30,8 @@
   "lower_third": {
     "font": "",
     "size_px": null,
-    "color": "",
-    "background": "",
+    "color": "#FFFFFF",
+    "background": "#022446",
     "position": ""
   },
   "caption": {
@@ -35,7 +41,7 @@
     "chars_per_line_16x9": 42,
     "case": "sentence",
     "color": "#FFFFFF",
-    "pill_color": "",
+    "pill_color": "#022446",
     "pill_opacity": 0.6,
     "drop_shadow": false,
     "per_word_animation": false
