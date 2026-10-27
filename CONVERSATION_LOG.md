@@ -35,8 +35,13 @@ This repository auto-saves the progress of the working session. Each entry below
 - Alok supplied the logo and palette. Saved `brand/logos/antier-logo.svg` (wordmark) and `brand/logos/antier-mark.png` (500×499 square logomark).
 - Colours into `brand.json`: navy `#022446` (dominant dark / default video bg), Antier blue `#0b96da` (primary + accent), light surface `#eef2ff`. Text = navy on light, white on navy. Caption pill = navy at 60%.
 - Noted: the SVG's internal blue is `#0C9EDA`, a hair off the stated brand blue `#0b96da`; treating `#0b96da` as canonical.
-- **Still needed:** fonts (wordmark typeface + caption/UI sans) — not guessed; Tokel and Abstraxn logos; API keys; footage naming; first brief.
+- **Still needed:** fonts; Tokel and Abstraxn logos; API keys; footage naming; first brief.
+
+### Brand kit — font + Abstraxn logo (2026-10-27)
+- Font: **Space Grotesk** (Google Fonts) — brand typeface for wordmark, headlines, body, captions. Set in `brand.json` fonts.sans (source `@remotion/google-fonts/SpaceGrotesk`, weights 300–700), and on caption + lower-third blocks. Load via `@remotion/google-fonts` in Phase 7.
+- Abstraxn logo saved to `brand/logos/abstraxn-logo.png` (identified by compositing the white wordmark on navy — it read "abstraxn", green pixel-grid mark). Path set in `brand.json`.
+- **Still needed:** Tokel logo; API keys; footage naming; first brief.
 
 ### Next (awaiting user)
-- Fonts + remaining product logos to complete `brand.json`.
+- Tokel logo to finish `brand.json` logos.
 - Approve toolchain install pass (Section 11): Node/FFmpeg/Python checks, `npx create-video`, Remotion + Python deps, build template components, 10s dual-master smoke test.

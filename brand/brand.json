@@ -1,5 +1,5 @@
 {
-  "_comment": "Source of truth for brand (CLAUDE.md Section 7). Colours and logos supplied by Alok 2026-10-27. Fonts still needed — do not invent a typeface; ask.",
+  "_comment": "Source of truth for brand (CLAUDE.md Section 7). Colours, font, and logos supplied by Alok 2026-10-27. Tokel logo still needed.",
   "colors": {
     "navy": "#022446",
     "primary": "#0b96da",
@@ -9,9 +9,9 @@
     "_notes": "navy = dominant dark (default video background per scene spec); primary/accent = Antier blue; background = light surface for light-mode frames; text = navy on light, white (#FFFFFF) on navy. The supplied logo SVG uses #0C9EDA internally, a hair off the brand blue #0b96da — #0b96da is canonical."
   },
   "fonts": {
-    "sans": { "family": "", "source": "", "weights": [] },
+    "sans": { "family": "Space Grotesk", "source": "@remotion/google-fonts/SpaceGrotesk", "weights": [300, 400, 500, 600, 700] },
     "mono": { "family": "", "source": "", "weights": [] },
-    "_notes": "NEEDED from brand kit: the wordmark typeface and the UI/caption sans. Not guessed."
+    "_notes": "Brand typeface is Space Grotesk (Google Fonts) — used for wordmark, headlines, body, and captions. Load via @remotion/google-fonts (Phase 7). Mono not specified; add only if a brief needs it."
   },
   "logos": {
     "antier": {
@@ -20,7 +20,7 @@
       "mark_png": "brand/logos/antier-mark.png"
     },
     "tokel": { "svg": "", "png": "" },
-    "abstraxn": { "svg": "", "png": "" }
+    "abstraxn": { "svg": "", "png": "brand/logos/abstraxn-logo.png" }
   },
   "safe_margins": {
     "horizontal_inset_pct": 5,
@@ -28,14 +28,14 @@
     "vertical_bottom_px": 350
   },
   "lower_third": {
-    "font": "",
+    "font": "Space Grotesk",
     "size_px": null,
     "color": "#FFFFFF",
     "background": "#022446",
     "position": ""
   },
   "caption": {
-    "font": "",
+    "font": "Space Grotesk",
     "max_lines": 2,
     "chars_per_line_9x16": 32,
     "chars_per_line_16x9": 42,
