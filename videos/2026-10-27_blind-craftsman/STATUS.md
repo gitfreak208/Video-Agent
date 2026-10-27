@@ -1,5 +1,8 @@
-Phase: 6b (footage edit) — awaiting media
-Gate: Alok is supplying a Veo 3.1 video to edit into the film (cinematic look kept). File not yet received. (asked 2026-10-27)
-Next: on receiving the file(s): probe with ffprobe, log ingest, transcribe if VO present, write a paper edit mapping footage to the storyboard's 24 shots / 108s, then cut/stitch + titles/captions/grade/music → both masters.
-Blockers: no media yet. Need: the file(s) in assets/supplied/raw/, whether it's one render or many clips, whether audio/VO is baked in, and the render's resolution/fps.
+Phase: DELIVERED (cinematic animatic v1)
+Gate: none open. Film rendered and self-reviewed via stills + encoded-frame extraction.
+Deliverable: videos/2026-10-27_blind-craftsman/renders/final/blind-craftsman_16x9.mp4
+  (1920x1080, 24fps, 108.0s, h264 crf18, ~19MB, silent, 2.4:1 matte). Gitignored; reproducible from src/film/.
+Done: ported all 24 storyboard shots to Remotion (src/film/), animated camera moves, VO-as-text,
+  chapter cards, title/end cards, grain+vignette, tungsten look. Fixed title-card overscan clip + font weights.
+Next (optional, user's call): scratch TTS VO + music (needs key) then re-time; 2160p master; swap sketches for supplied clips.
 Last commit: (pending this turn)
