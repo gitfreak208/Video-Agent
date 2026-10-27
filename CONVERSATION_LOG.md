@@ -63,4 +63,13 @@ This repository auto-saves the progress of the working session. Each entry below
 - **Section 11 (first-run setup) is now complete.** Toolchain, Remotion project, both masters rendering, footage path, transcription deps — all working.
 
 ### Next (awaiting user)
-- Tokel logo; which API keys to enable (`.env`); footage naming convention; and the **first brief** to start Phase 1 (Intake).
+- Tokel logo; which API keys to enable (`.env`); footage naming convention.
+
+## First brief — "The Blind Craftsman" (2026-10-27)
+
+- Alok supplied a storyboard HTML (1:48 hero film on private AI agents, FHE + ZK; 24 shots, 2.39:1, obsidian/tungsten cinematic look) and asked to "create the video."
+- Ran Phase 1 Intake → `videos/2026-10-27_blind-craftsman/` (intake.md, STATUS.md, brief/README.md).
+- **Capability pushback (did NOT build):** the storyboard is live-action + photoreal-CG cinematic film; this pipeline makes motion graphics. Can't film live-action (Section 0); photoreal CG (hall/cube/drone/mesh/character) is out of scope. Only the title/GFX shots are a direct fit.
+- Proposed nearest achievable: a **Remotion animatic/previz** at 2.39:1, cut to shot timings, animating the storyboard's own blocking sketches, with scratch VO (TTS if key added). Also noted: stylised MG reinterpretation, partial gen-video (costly/inconsistent), or out-of-scope.
+- Also flagged: look diverges entirely from Antier brand — is this Antier-branded or a standalone hero film?
+- **Gate open** (Phase 2): awaiting deliverable choice + (for animatic) plan approval. Asked user to drop the original .html into brief/ for a byte-exact record.
