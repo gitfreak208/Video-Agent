@@ -2,6 +2,7 @@
 # probe.sh — FFprobe a media file; print format + streams as JSON.
 # Usage: probe.sh <media-file>
 set -euo pipefail
+. "$(dirname "$0")/_toolpath.sh" 2>/dev/null || true
 if [ $# -lt 1 ]; then echo "usage: probe.sh <media-file>" >&2; exit 2; fi
 f="$1"
 [ -f "$f" ] || { echo "probe.sh: no such file: $f" >&2; exit 1; }

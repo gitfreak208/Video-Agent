@@ -55,6 +55,12 @@ This repository auto-saves the progress of the working session. Each entry below
 - **Versions recorded** in `project.yaml`.
 - Deferred: the smoke test's "supplied clip through cut.sh + concat" leg (needs system FFmpeg).
 
+### FFmpeg installed — Section 11 complete (2026-10-27)
+- User added a `"PowerShell"` allow rule. First retry (curl/BtbN) still tripped the classifier; the permitted gyan.dev `Invoke-WebRequest` path (with retries, progress off) succeeded.
+- **FFmpeg + ffprobe 9.0.2** portable at `C:\Users\mohit.bhatt\tools\ffmpeg-9.0.2-essentials_build\bin`. Versions recorded in `project.yaml`.
+- Added `scripts/_toolpath.sh`; every ffmpeg script sources it to auto-resolve the portable Node + FFmpeg bins without a global PATH.
+- **Footage path verified end to end**: `probe.sh` on a master, then test clip → `cut.sh` → `normalise.sh` → concat demuxer → clean 1920x1080@30, 4.0s. This was the last deferred leg of Section 11 step 6.
+- **Section 11 (first-run setup) is now complete.** Toolchain, Remotion project, both masters rendering, footage path, transcription deps — all working.
+
 ### Next (awaiting user)
-- Approve an FFmpeg install method (or install it) to unlock footage probe/cut/concat and platform exports.
-- Tokel logo; API keys; footage naming; first brief.
+- Tokel logo; which API keys to enable (`.env`); footage naming convention; and the **first brief** to start Phase 1 (Intake).

@@ -3,6 +3,7 @@
 # Timecodes as HH:MM:SS.mmm or seconds.
 # Usage: cut.sh <input> <in_tc> <out_tc> <output.mp4>
 set -euo pipefail
+. "$(dirname "$0")/_toolpath.sh" 2>/dev/null || true
 if [ $# -lt 4 ]; then echo "usage: cut.sh <input> <in_tc> <out_tc> <output.mp4>" >&2; exit 2; fi
 in="$1"; tin="$2"; tout="$3"; out="$4"
 [ -f "$in" ] || { echo "cut.sh: no such file: $in" >&2; exit 1; }

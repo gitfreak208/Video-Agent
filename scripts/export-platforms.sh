@@ -4,6 +4,7 @@
 # Targets: -14 LUFS integrated, -1 dBTP true peak; aspect/resolution/duration per platform.
 # Usage: export-platforms.sh <master.mp4> <platform> <output.mp4>
 set -euo pipefail
+. "$(dirname "$0")/_toolpath.sh" 2>/dev/null || true
 if [ $# -lt 3 ]; then
   echo "usage: export-platforms.sh <master.mp4> <platform> <output.mp4>" >&2
   echo "platforms: youtube | shorts | reels | ig-feed | facebook | x" >&2

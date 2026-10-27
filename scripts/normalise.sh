@@ -2,6 +2,7 @@
 # normalise.sh — conform a clip to the project target before concatenation (Phase 6b, step 16).
 # Usage: normalise.sh <input> <output.mp4> [WxH] [fps]
 set -euo pipefail
+. "$(dirname "$0")/_toolpath.sh" 2>/dev/null || true
 if [ $# -lt 2 ]; then echo "usage: normalise.sh <input> <output.mp4> [WxH] [fps]" >&2; exit 2; fi
 in="$1"; out="$2"; size="${3:-1920x1080}"; fps="${4:-30}"
 [ -f "$in" ] || { echo "normalise.sh: no such file: $in" >&2; exit 1; }

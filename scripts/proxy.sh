@@ -2,6 +2,7 @@
 # proxy.sh — 720p single-codec proxy for editing decisions (Phase 6b).
 # Usage: proxy.sh <input> <output.mp4> [fps]
 set -euo pipefail
+. "$(dirname "$0")/_toolpath.sh" 2>/dev/null || true
 if [ $# -lt 2 ]; then echo "usage: proxy.sh <input> <output.mp4> [fps]" >&2; exit 2; fi
 in="$1"; out="$2"; fps="${3:-30}"
 [ -f "$in" ] || { echo "proxy.sh: no such file: $in" >&2; exit 1; }
